@@ -44,8 +44,8 @@ public class DriverManager {
         caps.setCapability("project", "My First Project");
         caps.setCapability("build", buildName);
         caps.setCapability("name", "Bstack-[Java] Sample Test");
-        caps.setCapability("app", app);
-        //caps.setCapability("app", deviceObj.getString("app_url"));
+        //caps.setCapability("app", app);
+        caps.setCapability("app", deviceObj.getString("app_url"));
         //caps.setCapability("app", "bs://be03153611dda90dfb0376cfb688990d2ad37897");
 
 

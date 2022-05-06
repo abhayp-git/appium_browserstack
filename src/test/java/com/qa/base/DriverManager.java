@@ -25,12 +25,12 @@ public class DriverManager {
     //    String userName = "omprakashchavan1";
     //    String accessKey = "WSh657ymwgyZTQkTtVoy";
 
-        String userName = "abp_ueF7RY";
-        String accessKey = "n6nmXYpK4dxU9yEzNoBD";
+//        String userName = "abp_ueF7RY";
+//        String accessKey = "n6nmXYpK4dxU9yEzNoBD";
 
 
-//        String userName = System.getenv("BROWSERSTACK_USERNAME");
-//        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+        String userName = System.getenv("BROWSERSTACK_USERNAME");
+        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
     //    String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
         String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
     //    String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
@@ -44,8 +44,8 @@ public class DriverManager {
         caps.setCapability("project", "My First Project");
         caps.setCapability("build", buildName);
         caps.setCapability("name", "Bstack-[Java] Sample Test");
-        //caps.setCapability("app", app);
-        caps.setCapability("app", deviceObj.getString("app_url"));
+        caps.setCapability("app", app);
+        //caps.setCapability("app", deviceObj.getString("app_url"));
         //caps.setCapability("app", "bs://be03153611dda90dfb0376cfb688990d2ad37897");
 
 
